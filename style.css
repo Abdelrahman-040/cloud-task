@@ -1,26 +1,70 @@
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
 }
 
-header {
-    background: #3498db;
-    color: white;
+body {
+    min-height: 100vh;
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center wrapper */
+.wrapper {
+    width: 100%;
+    max-width: 500px;
     padding: 20px;
+}
+
+/* Card styling */
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 25px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
     text-align: center;
 }
 
-.container {
-    padding: 20px;
-    font-size: 18px;
+/* Text styling */
+.card h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #222;
 }
+
+.card p {
+    font-size: 0.98rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Button styling */
 button {
-    background: #2ecc71;
-    color: white;
     border: none;
-    padding: 10px 15px;
+    outline: none;
+    padding: 10px 22px;
+    border-radius: 999px;
+    background: #667eea;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 500;
     cursor: pointer;
-    font-size: 16px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.5);
+}
+
+button:hover {
+    background: #5563d6;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(85, 99, 214, 0.65);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 16px rgba(85, 99, 214, 0.5);
 }
